@@ -1,89 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom</title>
+<html >
+<head>  
+        <title>Masai Calculator</title>
+        <style>
+            #parent{
+                border: 0px solid red;
+                width: 25%;
+                margin: auto;
+                display: grid;
+                grid-template-columns:repeat(4,60px); 
+                grid-auto-rows: 60px;
+                gap:10px;
+                justify-content: center;
+                padding: 50px 0px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: aqua;
+                border-radius: 10px;}
+             #parent>button{ 
+                border: 1px solid firebrick;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px 0px;}
+                #parent>div{
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 10px;
+                }
+
+             #parent>div:nth-child(1)
+                {grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                color: white;}
+
+             .black{background-color: black;
+                color: white;}
+
+             #parent>button:nth-child(12)
+             {background-color: red;
+                color: white;}
+
+             h1{
+                color: teal;
+                text-align: center;}  
+                .black{
+                  background-color: black;
+                  color: white;
+                  border-radius: 10px;
+                }  
+                button:hover{
+                  background-color:forestgreen
+                }   
+                #input{
+                  font-size: 40px;
+                  background-color: black;
+                }
+                #cont{
+                  height: 90px;
+                  width: 250px;
+                  margin-left:42%;
+                  border: 0px solid black;
+                }
+                #cont>button{
+                  border-radius:10px;
+                  font-size: 35px;
+                  width: 50px;
+                  
+                }
+                #Equal{
+                  margin-left: 45%;
+                  background-color: black;
+                  color: aliceblue;
+                  width: 150px;
+                  font-size: 30px;
+                }
+        </style>
 </head>
 <body>
-    <h1 id="display"></h1>
-    <div class="cont">
-        <button>0</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <div class="parent">
-            <button>+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>/</button>
-            <button>C</button>
-        </div>
-    </div>
-    <button id="equal">enter</button>
+    <h1> Masai Calculator</h1>
+
+    <div id="parent">
+      <div id="input"></div>
+      <button id="done">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>0</button>
+   </div>
+<div id="cont">
+  <button >+</button>
+  <button >-</button>
+  <button >*</button>
+  <button >/</button>
+ </div>
+   
+    <button id="Equal">=</button>
 </body>
 <script>
-     let keypad=document.querySelectorAll(".cont>button")
-     let operator=document.querySelectorAll("#parent.button");
-     let result=document.getElementById("equal");
-     let heading=document.getElementById("display");
-
-     let firstNumber="";
-     let secondNumber="";
-     let operators="";
-     let flag = true;
-    
-    result.addEventListener("click",function(){
-        heading[i].innerText=calculate(firstNumber,secondNumber,operators)
-    })
-
-    for(let i =0;i<keypad.length;i++){
-      keypad[i].addEventListener("click",function(){
-        if(flag==true)
-        {
-            firstNumber+=keypad[i].innerText
-            heading.innerText=firstNumber
-        
-        }
-        else{
-            secondNumber+=keypad[i].innerText
-            heading.innerText=secondNumber
-        }
-
-      })
-      for( let i=0;i<operator.length;i++){
-        operator[i].addEventListener("click",function(){
-            flag=false;
-         operators=operator[i].innerText;
+  let input=document.getElementById("input");
+  let button=document.querySelectorAll("#parent>button");
+  let Equal=document.getElementById("Equal");
+  let operator=document.querySelectorAll("#cont>button")
+  let FirstNumber="";
+  let SecondNumber="";
+  let operators="";
+  let IsFirstNumber=true;
+  Equal.addEventListener("click",function(){
+   input.innerText=calculate(FirstNumber,SecondNumber,operators)
+  })
 
 
-        })
-       
-      }
+
+button.forEach((ele)=>{
+ele.addEventListener("click",function(){
+  if(IsFirstNumber===true){
+    FirstNumber+=ele.innerText
+    input.innerText=FirstNumber;}
+
+    else{
+      SecondNumber+=ele.innerText;
+      input.innerText=SecondNumber;
     }
-    function calculate(firstNumber,secondNumber,operators){
-          switch(operators){
-            case"+":
-            return Number(firstNumber)+Number(secondNumber);
-            case"-":
-            return Number(firstNumber)-Number(secondNumber);
-            case"*":
-            return Number(firstNumber)*Number(secondNumber);
-            case"/":
-            return Number(firstNumber)/Number(secondNumber);
-            case"C":
-            return " "
-          
-          }
-        }  
-        
-          
-    
+  })
+})
+operator.forEach((ele)=>{
+  ele.addEventListener("click",function(){
+     IsFirstNumber=false;
+    operators=ele.innerText;
+  })
+})
+function calculate(FirstNumber,SecondNumber,operators){
+   switch(operators){
+    case "+":
+      return Number(FirstNumber)+Number(SecondNumber);
+      case "-":
+      return Number(FirstNumber)-Number(SecondNumber);
+      case "*":
+      return Number(FirstNumber)*Number(SecondNumber);
+      case "/":
+      return Number(FirstNumber)/Number(SecondNumber);
+ 
+      
+   }
+}
+
+
+  
+
+  
+  
+
+
+
 </script>
 </html>
