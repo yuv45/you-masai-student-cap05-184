@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    
+    font-size: 50px;
+    font-family: Poppins;
+}
+#parent{
+    width: 350px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    border-radius: 15px;
+    margin: auto;
+    
+}
+h2{
+ text-align: center;
+ margin-top: 5%;
+ 
+ 
+ 
+}
+form{
+    margin: auto;
+}
+input{
+    width: 300px;
+    margin-bottom: 5%;
+    height: 30px;
+    font-size: 13px ;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-family: Poppins;
+    margin-left: 10px;
+    
+}
+label{
+    font-family: Poppins;
+    margin-left: 10px;
+    color: white;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+input:hover{
+    background-color:honeydew
+}
+#cont{
+    
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 0%;
+    
+    margin-bottom: 5%;
+
+}
+img{
+    max-width:30px;
+    text-align: center;
+    margin-top: 0%;
+    
+}
+#done{
+    border: 1px solid grey ;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+ 
+ h6{
+    margin: 0px;
+    margin-right: 10%;
+    margin-top: 0%;
+    font-size: 15px;
+    color: blue;
+    text-align: right;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1%;
+ }
+ button{
+    border: none;
+    background-color:none;
+    color: blue;
+    cursor: pointer;
+
+ }
+ a{
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color:none;
+    text-decoration: none;
+    
+ }
+ span{
+    color:red
+ }
+ p{
+    font-size: 11px;
+    color: white
+ }
+ #password{
+    display: flex;
+    align-items: center;
+    
+ }
+ #password img{
+    max-width: 20px;
+    line-height: 0;
+ position: absolute;
+left: 58%;
+top: 46%;
+
+    cursor: pointer;
+ }
+ u{
+    color: black
+ }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #car{
+    background-image: url(./prototype.png);
+    background-size: cover;
+    height: 400px;
+    margin-top: 10%;
+}
+h1{
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color:grey
+}
+    </style>
+</head>
+<body>
+    <div id="car">
+        <h1> Tata Tiago</h1>       
+    </div>
+ 
+</body>
+<script>
+    function FourWheeler1(carname,model,color,airbags,wheel,Powerbrakes){
+    this.carname=carname
+    this.model=model
+    this.color=color
+    this.airbags=airbags
+    this.wheel=wheel
+    this.Powerbrakes=Powerbrakes
+    
+    
+}
+FourWheeler1.prototype.ApplyBrake=function(){
+    console.log("Apply the brake")
+}
+FourWheeler1.prototype.ShiftGear=function(){
+    console.log("Gear changes")
+}
+FourWheeler1.prototype.HeadLights=function(){
+    console.log("Lights On")
+}
+function FourWheeler2(carname,model,color,airbags,wheel,Powerbrakes,Bluetooth,AirConditioner){
+FourWheeler1.call(this,carname,model,color,airbags,wheel,Powerbrakes)
+ this.Bluetooth=Bluetooth
+ this.AirConditioner=AirConditioner
+}
+Object.setPrototypeOf(FourWheeler2.prototype , FourWheeler1.prototype)
+FourWheeler2.prototype.Sunroof=function(){
+    console.log("Sunroof get opened")
+}
+FourWheeler2.prototype.FogLight=function(){
+    console.log("Fog Light is opened")
+}
+FourWheeler2.prototype.Alexa=function(){
+    console.log("Playing the songs......")
+}
+var car2=new FourWheeler2("Tata Tiago",2023,"grey-black",3,"carbon-fibre",true,"v1.em3.65",true)
+console.log(car2)
+car2.ShiftGear()
+car2.ApplyBrake()
+ 
+
+
+ 
+ 
+</script>
+</html>

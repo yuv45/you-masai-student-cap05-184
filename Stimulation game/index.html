@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function Vehicle(brand,model,speed,fueltype){
+    this.brand=brand
+    this.model=model
+    this.speed=speed
+    this.fueltype=fueltype
+    }
+    Vehicle.prototype.accelerate=function(){
+        console.log("Speed has increased")
+    }
+    Vehicle.prototype.brake=function(){
+        console.log("Speed  has decreased")
+    }
+    Vehicle.prototype.refuel=function(){
+        console.log("The fuel is refueling")
+    }
+    function Car(brand,model,speed,fueltype,numberofwheels){
+        Vehicle.call(this,brand,model,speed,fueltype)
+        this.numberofwheels=numberofwheels
+    }
+    Object.setPrototypeOf(Car.prototype , Vehicle.prototype)
+    Car.prototype.honk=function(){
+        console.log("poooo.... poooo....")
+    }
+    function Airplane(brand,model,speed,fueltype,numberofwheels,numberofgears,landingGear){
+        Car.call(this,brand,model,speed,fueltype,numberofwheels)
+        this.numberofgears=numberofgears
+        this.landingGear=landingGear
+    }
+    Object.setPrototypeOf(Airplane.prototype , Car.prototype)
+    Airplane.prototype.takeoff=function(){
+        console.log("Chewwwwwwww----------->")
+    }
+   let Airplane1=new Airplane("Air india",2021,"300kph","Diesel",4,5,2)
+   let car1= new Car("Maruti",2023,"140kph","Diesel",4)
+   console.log(car1)
+   car1.accelerate()
+   Airplane1.refuel()
+
+</script>
+</html>
