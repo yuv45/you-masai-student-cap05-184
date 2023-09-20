@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin-top: 20%;
+    text-align: center;
+    font: 34px "Poppins";
+    font-weight: bold;
+    color: red;
+    margin-right: 12%;
+}
+#box{
+    
+    max-width: 400px;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:30% ;
+}
+#box>div{
+    text-align: center;
+    margin: 20px 0;
+
+}
+#box>div:first-child{
+    width:90%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input{
+    max-width: 50px;
+    border: none;
+    text-align: center;
+    font: 24px "Poppins";
+    background: black;
+    color: white;
+}
+span{
+    font:24px "Poppins";
+}
+button{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: rgb(95, 104, 113);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+}
+button:hover{
+    background-color: rgb(82, 85, 89);
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(51, 52, 54);
+}
+body{
+    background-image: url(./e.webp);
+    background-size: cover;
+}
+img{
+    width:200px;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}

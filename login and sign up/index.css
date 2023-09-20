@@ -17,7 +17,7 @@ body{
     background:transparent;
     display: flex;
     justify-content: space-between;
-    z-index: 99;}
+    z-index: 99;} 
 
 .navigation a {
     text-decoration: none;

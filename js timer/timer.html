@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timer .css">
+</head>
+<body>
+    <h1>Open After</h1>
+    <div id="box">
+        <div><input id="hour" type="number" placeholder="0"><span>:</span>
+            <input id="min" type="number" placeholder="0"><span>:</span>
+            <input id="sec" type="number" placeholder="0"></div>
+            <div>
+                <img src="./r.jpg">
+            </div>
+        <div>
+           
+            <button id="start" onclick="start()">Start</button>
+            <button id="restart" onclick="restart()">Restart</button>
+            <button id="pause" onclick="pause()">Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="timer.js"></script>
+</html>

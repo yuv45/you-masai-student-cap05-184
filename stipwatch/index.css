@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+
+}
+video{
+ position: absolute;
+  width: 100%;
+  z-index: -5;
+  background-size: cover;
+  fill-opacity:0-1
+    
+}
+h1{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 80px;
+    color: white;
+}
+.watch{
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    
+    
+    
+}
+.watch button{
+    font-size: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: aliceblue;
+    margin-left: 20px;
+    border-radius: 20px;
+    
+}
+.watch button:hover{
+    box-shadow: rgb(92, 92, 85) 0px 5px 15px;
+    background-color: white;
+    color: black;
+    padding: 22px;
+    transition-delay: 0.1s;
+}
