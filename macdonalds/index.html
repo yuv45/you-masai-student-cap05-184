@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    
   <div class="hero">
     <div class="navbar">
         <div class="nav-logo">
@@ -17,21 +18,23 @@
         <div class="nav-links">
             <ul>
                 <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#deals">Deals</a>
                 <a href="#about">About</a>
-                <a href="#recipe">Recipe</a>
             </ul>
-            <button type="button"  class="btn">Sign up </button>
+            <button type="button" id="btn">Sign up </button>
         </div>
     </div>
     <div id="parent">
         <h2>Sign up</h2>
        <form>
+        <i class='bx bx-x-circle'></i>
         <label for="">Username</label> </label><br>
         <input type="text" id="text" placeholder="Enter username,phone no. or email" required><br>
         <label for="">Password </label><br>
         <div id="password">
             <input type="password" id="type"placeholder=" Enter your password" required >
-            <img  onclick="calculate()"   src="./hide.png">
+            <i  onclick="calculate()" class='bx bxs-low-vision'></i> 
             
         </div>
         
@@ -51,26 +54,184 @@
    </div>
 <div class="vertical-bar">
     <div class="search-icon">
-        <i class='bx bxs-food-menu'></i><br>
+       <a href="#menu"> <i class='bx bxs-food-menu'></i></a><br>
         <i class='bx bx-search'></i>
     </div>
     <div class="social-icon">
-        <i class='bx bxl-facebook-circle'></i>
-        <i class='bx bxl-twitter'></i>
-        <i class='bx bxl-instagram'></i>
-        <i class='bx bxl-whatsapp' ></i>
-    </div>
-</div>
-<div class="notifications">
-    <div class="contents">
-        
-        <p><a href="#">Prev</a><a href="#"> Next</a></p>
-    </div>
-    <div class="notification-img">
-            <img>
+       <a href="https://www.facebook.com/McDonalds/"> <i class='bx bxl-facebook-circle'></i></a>
+       <a href="https://twitter.com/McDonalds?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">  <i class='bx bxl-twitter'></i> </a>
+       <a href="https://www.instagram.com/mcdonalds/?hl=en">  <i class='bx bxl-instagram'></i> </a>
+       <a href="https://twitter.com/WhatsApp/status/1648088007503642625"> <i class='bx bxl-whatsapp' ></i> </div></div></a>
     </div>
 </div>
 
+</div>
+
   </div>
+  <!-- menu section -->
+<div id="next">
+    <div class="goback">
+        <p >Order no. <span id="order-no"></span></p>
+        <h3>Please pay out the bill</h3>
+         <h5>The total amount:</h5>
+         <span id="total"></span>
+        <div class="botn">
+            <button id="back">Back</button>
+            <button id="pay">Pay</button>
+        </div>
+    </div>
+</div>
+<div id="next2">
+    <div class="goback">
+        <h3>Please confirm your order..</h3>
+        <div class="botn">
+            <button id="goback">Goback</button>
+            <button id="proceed">Proceed</button>
+            
+        </div>
+    </div>
+</div>
+<div id="hidden">
+    <div class="goback">
+        <p >Order no. <span id="order-no."></span></p>
+        <h4>Your order is ready</h4>
+        <audio src="./audio.wav"></audio>
+        <h3>Thank you for visiting</h3>
+        <div class="botn">
+            <button id="cancel">Cancel</button>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+  <div id="menu">
+    <h1 class="food "> Menu</h1>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="burger.webp">
+        </div>
+        <div class="description">
+            <h4 class="h4">Burger</h4>
+          <p>"Juicy, big, loaded with toppings of my choice." "High quality beef medium to well with cheese and bacon on a multigrain bun." "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or mayonnaise!"</p>
+          <h6>$5</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display1">0</div>
+           <button onclick="Addburger()">+</button>
+           <button onclick="Removeburger()">-</button>
+        </div>
+    </div>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="hotdog.jpg">
+        </div>
+        <div class="description">
+            <h4 class="h4">Hot Dog</h4>
+          <p>A hot dog (commonly spelled hotdog) is a food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can refer to the sausage itself. The sausage used is a wiener (Vienna sausage) or a frankfurter (Frankfurter Würstchen, also just called frank).</p>
+          <h6>$10</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display2">0</div>
+           <button onclick="Adddog()">+</button>
+           <button onclick="Removedog()">-</button>
+        </div>
+    </div>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="french fries.jpg">
+            
+        </div>
+        <div class="description">
+            <h4 class="h4">french fries</h4>
+          <p>french fries, also called chips, finger chips, fries, or French pommes frites, side dish or snack typically made from deep-fried potatoes that have been cut into various shapes, especially thin strips. Fries are often salted and served with other items, including ketchup, mayonnaise, or vinegar. </p>
+          <h6>$7</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display3">0</div>
+           <button onclick="Addfries()">+</button>
+           <button onclick="Removefries()">-</button>
+        </div>
+    </div>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="dosa.jpg">
+        </div>
+        <div class="description">
+            <h4 class="h4">Dosa</h4>
+          <p> A dosa is a thin savory pancake in South Indian cuisine made from a fermented batter of ground black lentils and rice. Dosas are served hot, often with chutney and sambar. Dosa is a signature dish in South India and Sri Lanka, and is popularly served in their respective restaurants around the world.</p>
+          <h6>$12</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display4">0</div>
+           <button onclick="AddDosa()">+</button>
+           <button onclick="RemoveDosa()">-</button>
+        </div>
+    </div>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="coke.jpg">
+        </div>
+        <div class="description">
+            <h4 class="h4">Coke</h4>
+          <p> A dosa is a thin savory pancake in South Indian cuisine made from a fermented batter of ground black lentils and rice. Dosas are served hot, often with chutney and sambar. Dosa is a signature dish in South India and Sri Lanka, and is popularly served in their respective restaurants around the world.</p>
+          <h6>$6</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display5">0</div>
+           <button onclick="AddCoke()">+</button>
+           <button onclick="RemoveCoke()">-</button>
+        </div>
+    </div>
+    <div class="menu-items">
+        <div class="profile">
+            <img src="momos.jpg">
+        </div>
+        <div class="description">
+            <h4 class="h4">Momos</h4>
+            <p> As I have mentioned above, momos are dumplings made with flour and a savory stuffing. This stuffing can be made with veggies, sea-food, chicken or paneer (cottage cheese) . Method of cooking: Momos can be steamed, baked or deep-fried</p>
+          <h6>$3</h6>
+
+        </div>
+        <div class="input">
+           <div class="display" id="display6">0</div>
+           <button onclick="Addmomos()">+</button>
+           <button onclick="Removemomos()">-</button>
+        </div>
+    </div>
+    <div class="order">
+        <button id="place-order">Place order</button>
+    </div>
+  </div>
+<!-- deals section -->
+<h1>Deals of the weeks</h1>
+<div id="deals">
+    <div class="img">
+        <img src="c.png">
+    </div>
+    <div class="order">
+        <button id="Claim">Claim points</button>
+    </div>
+</div>
+<!-- about section -->
+<div id="about">
+    <h1>About Us </h1>
+    <div class="set-row">
+        <img src="./a.png">
+        <div class="about-content">
+            <h2>About our store</h2>
+            <p> McDonald's, in full McDonald's Corporation, American fast-food chain that is one of the largest in the world, known for its hamburgers, french fries, and especially Big Macs. It is one of the most successful brands in marketing history. Company headquarters are in Chicago.</p>
+             <a href="https://en.wikipedia.org/wiki/McDonald%27s" class="btn2">Read More</a>
+        </div>
+    </div>
+</div>
 </body>
+<script src="./index.js"></script>
 </html>

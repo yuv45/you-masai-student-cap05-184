@@ -42,6 +42,7 @@ cursor: pointer;
     color: white;
     text-decoration: none;
     font-size:17px ;
+    margin-top: 0;
     
 }
 .nav-links ul li::after{
@@ -57,7 +58,7 @@ cursor: pointer;
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.btn{
+#btn{
     padding:10px 20px ;
     border: 0;
     background:yellow ;
@@ -73,10 +74,10 @@ cursor: pointer;
 
     background-image: url(./f.jpeg   );
 }
-.btn:hover{
+#btn:hover{
     background-color: rgb(214, 151, 14);
 }
-.navbar .btn{
+.navbar #btn{
 float: right;
 margin-top: 12px;
 
@@ -100,16 +101,18 @@ span{
     left: 0%;
     position: absolute;
     width: 70px;
+    
 }
 .serach-icon{
     height: 70%;
-    width: 60pxpx;
+    width: 60px;
 
 }
 .search-icon i{
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 80%;
   font-size: 35px;
+  color: white;
 }
 .social-icon{
    height: 35%;
@@ -121,7 +124,7 @@ span{
    position: absolute;  
 }
 .social-icon i{
-    margin: 15px 23px;
+    margin: 15px 23px ;
     display: block;
     padding: 5px;
     border: 1px solid black;
@@ -164,9 +167,10 @@ padding: 0px 50px;
 }
 i{
     color: white;
+    cursor: pointer;
     
 }
-
+/* second part*/
 h1{
     text-align: center;
     
@@ -174,11 +178,13 @@ h1{
     font-family: Poppins;
 }
 #parent{
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
     border-radius: 15px;
     margin: auto;
+    background-color: rgb(255, 174, 0);
+    margin-top: 0;
     
 }
 h2{
@@ -190,10 +196,11 @@ h2{
 }
 form{
     margin: auto;
+    
 }
 input{
-    width: 300px;
-    margin-bottom: 5%;
+    width: 250px;
+    margin-bottom: 3%;
     height: 30px;
     font-size: 13px ;
     border: 1px solid grey;
@@ -209,6 +216,8 @@ label{
 }
 input[type="submit"]{
     cursor: pointer;
+    width: 250px;
+    margin-left: 20px;
 }
 input:hover{
     background-color:honeydew
@@ -258,7 +267,7 @@ img{
 
  }
  a{
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
     border: none;
     background-color:none;
@@ -270,7 +279,8 @@ img{
  }
  p{
     font-size: 11px;
-    color: white
+    color: black;
+    margin-top: 20px;
  }
  #password{
     display: flex;
@@ -288,4 +298,250 @@ img{
  }
  u{
     color: black
+ }
+ i{
+    color: black;
+    position: relative;
+    top: -5px;
+    right: 25px;
+    font-size: 20px;
+ }
+
+ .bx-x-circle{
+ position: absolute;
+ top: 24.7%;
+ right: 36%;
+ font-size: 30px;
+ cursor: pointer;
+ border-bottom-left-radius: 10px;
+ border-top-right-radius: 20px;
+ }
+ /* menu section */
+ .goback p{
+    text-align: center;
+ }
+ body{
+    background:#8F0100;
+ } 
+ #place-order {
+    border: 2px solid rgb(224, 141, 15)     ;
+    background-color: rgb(224, 141, 15);
+    color: white;
+    font-weight: bolder;
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    cursor:pointer  ;
+}
+#place-order:hover{
+    color: rgb(224, 141, 15);
+    background-color: white;
+}
+ #menu{
+width: 90%;
+margin: auto;
+    
+ }
+ .menu-items{
+    display: flex;
+    background-color: orange;
+    margin-top: 20px;
+    border-bottom-left-radius: 50px;
+     height:100px; 
+ }
+ .profile img {
+height: 100px;
+max-width: 200%;
+border-bottom-left-radius: 50px;
+border-top-right-radius: 50px;
+ } 
+ .input {
+    
+    border: none;
+    background: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+ }
+ .input button {
+    padding-left: 5px;
+    background: transparent;
+    color: white;
+ }
+ .description p{
+    font-size: 10px;
+    padding-left: 80px;
+ }
+ .h4{
+    padding-left: 40%;
+ }
+h1{
+    color: white;
+}
+.display{
+    border: 2px solid rgb(224, 141, 15);
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 40px;
+    padding-left: 8px;
+}
+
+/* deals section */
+#Claim {
+    border: 2px solid rgb(224, 141, 15)     ;
+    background-color: rgb(224, 141, 15);
+    color: white;
+    font-weight: bolder;
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    cursor:pointer  ;
+}
+#Claim:hover{
+    color: rgb(224, 141, 15);
+    background-color: white;
+}
+
+#deals img 
+{
+    max-width: 500%;
+    margin-left: 10%;
+}
+/* About section */
+.set-row{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.set-row img{
+    max-width: 50%;
+}
+.about-content{
+    margin-left: 10%;
+}
+.about-content .btn2{
+    background-color: rgb(224, 141, 15);
+    font-size: 25px;
+    color: white;
+    border: 1px solid rgb(224, 141, 15);
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 12px 30px;
+    transition: all .5s;
+}
+.about-content .btn2:hover{
+    background-color: white;
+    color:rgb(224, 141, 15) ;
+}
+.about-content p{
+    margin-bottom: 10%;
+    font-size: 15px;
+    color:rgb(224, 141, 15);
+}
+.about-content h2{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    margin-right: 60%;
+    color: white;
+}
+ h1{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+/* additional setings */
+ .goback{
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+    border-radius: 20px;
+ }
+ #next2{
+    position: absolute;
+    top: 180%;
+    left: 35%;
+    display: none;
+ }
+ #next2 h3{
+    font-size: 15px;
+    margin-bottom: 0;
+ }
+ #next2 button{
+    margin-top: 2%;
+ }
+ #next{
+    position: absolute;
+    top: 180%;
+    left: 35%;
+    display: none;
+    
+ }
+ #total{
+ margin: 135px;
+ }
+ 
+ #next h3{
+    font-size: 10px;
+    margin-top: -3px;
+ }
+ #next h5{
+    font-size: 13px;
+    text-align: center;
+ }
+ .botn {
+    text-align: center;
+    
+ }
+ .botn button {
+color: white;
+font-weight: bolder;
+background-color: rgb(224, 141, 15);
+padding: 6px;
+width: 80px;
+margin-top: 0%;
+margin-left: 20px;
+border-radius: 20px;
+font-size: 10px;
+ }
+ h3{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 15px;
+ }
+ #hidden h4{
+   font-size: 10px;
+    text-align: center;
+ }
+#hidden button{
+    margin-top: 0;
+}
+#hidden{
+    position: absolute;
+    top: 180%;
+    left: 35%;
+    display: none;
+    height: 200px;
+
+}
+
+    
+
+ #hidden audio{
+    width: 200px;
+    height: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: none;
+    position: absolute;
+    top: 10%;
+    margin-left: 40px;
  }
