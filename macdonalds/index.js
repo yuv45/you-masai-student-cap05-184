@@ -54,10 +54,7 @@ back.addEventListener("click",function(){
 
 // for the pay order button
 order.addEventListener("click",function(){
-    let random=Math.floor(Math.random()*100)+1;
-    next.style.display="block";
-    span.textContent=random;
-    spans.textContent=random;
+  
 
 
 
@@ -70,7 +67,15 @@ let total=document.getElementById("total");
    let momo=momos.innerText*3;
    total.textContent=`$ ${bg+dog+french+dos+cokes+momo}`
   
-
+  if(total.textContent==0){
+    
+  }
+  else{
+    let random=Math.floor(Math.random()*100)+1;
+    next.style.display="block";
+    span.textContent=random;
+    spans.textContent=random;
+  }
 
 })
 // for pay button

@@ -1,0 +1,194 @@
+
+*{
+    
+    margin: 0;
+    text-decoration: none;
+}
+.parent{
+    border: 0px solid red;
+    width: 28%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(252, 246, 246);
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         
+}
+#menu{
+    background-color: #5C249A;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 10px;
+}
+#menu .type .loc2  {
+    display: flex;
+}
+#menu .type .loc2 i{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+#menu .type .loc2 h6{
+    color: white;
+    font-size: 15px ;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#menu .type .loc{
+    font-size: 10px;
+    margin-left: 50px;
+    margin-top: -10px;
+    color: white;
+}
+#menu .icons{
+    color: white;
+    margin-top: 25px;
+    margin-right: 10px;
+} 
+.parent #first .text{
+    font-size: 12px;
+}
+.parent #first .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25px;
+}
+.parent #first .icons i{
+    background-color:#5C249A;
+    font-size: 25px;
+    padding: 6px;
+    border-radius: 10px;
+    color: white;
+}
+#first{
+    border: 0px solid blue;
+    margin: auto;
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+}
+.icons p{
+font-size: 10px;
+margin-right: 5px;
+}
+#second{
+    border: 0px solid hotpink;
+    border-radius: 10px;
+    display: flex;
+    height: 25px;
+    width: 98%;
+    margin: auto;
+    background-color: rgb(196, 222, 238);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+}
+#second p{
+    margin-left: 150px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+#second h4{
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+#third{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    border: 0px solid green;
+    margin-top: 10px;
+    
+}
+#third .refrence {
+    background-color: #598ADE;
+    width: 30%;
+    padding-top: 10px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#third p{
+    font-size: 12px;
+}
+#fourth{
+    border: 0px solid orange;
+    height: 190px;
+    margin: auto;
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+}
+#fourth .one{
+    display: flex;
+    justify-content: space-between;
+}
+#fourth .one h3{
+    font-size: 13px;
+}
+#fourth .one button{
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #5C249A;
+}
+#fourth .two {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-auto-rows: 40px;
+  gap: 20px;
+  text-align: center;
+}
+#fourth .two p{
+    font-size: 10px;
+}
+#fourth .two i{
+    font-size: 30px;
+    color: #5C249A;
+}
+.show{
+    background-color: #5C249A;
+    width: 40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    color: white;
+    
+}
+.show p{
+    font-size: 15px;
+    margin-top: 8px;
+}
+#fifth .home{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 13px;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#fifth .home i{
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#fifth .home i:hover {
+background-color: #5C249A;
+cursor: pointer;
+}
