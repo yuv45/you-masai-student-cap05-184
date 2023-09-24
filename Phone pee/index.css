@@ -4,6 +4,47 @@
     margin: 0;
     text-decoration: none;
 }
+#pop4 i{
+    font-size: 40px;
+}
+.bxs-check-circle{
+    font-size: 40px;
+}
+
+.pay-on-mobile{
+    border: 2px solid #5C249A;
+    border-radius: 10px;
+    width: 20%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    background-color: #598ADE ;
+    display: none;
+}
+.btn button{
+margin-top: 5%;
+margin-right: 20px;
+border:2px solid #5C249A;
+background-color: #5C249A;
+border-radius: 10px;
+padding: 6px;
+width: 60px;
+color: white;
+cursor: pointer;
+}
+.btn button:hover{
+    background-color: white;
+    color: #5C249A;
+}
+.pay-on-mobile input{
+    border: 2px solid #5C249A;
+    border-radius: 10px;
+    margin-top: 2%;
+}
 .parent{
     border: 0px solid red;
     width: 28%;

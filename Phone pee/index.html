@@ -10,8 +10,75 @@
    <title>Document</title>
  </head>
  <body>
-    
-    <div class="parent">
+    <div class="pay-on-mobile" id="pop1">
+        <h4>Payment successful</h4>
+        <i class='bx bxs-check-circle'></i>
+        <p id="total1"></p>
+        <div class="btn">
+            <button onclick="Back()" >Back</button>
+        </div>
+    </div>
+    <div class="pay-on-mobile" id="pop2">
+        <h4>Your transaction is successful</h4>
+        <i class='bx bxs-check-circle'></i>
+        <p id="total2"></p>
+        <div class="btn">
+            <button onclick="Back()" >Back</button>
+        </div>
+    </div>
+    <div class="pay-on-mobile" id="pop3">
+        <h4>Money succesfuuly added to your bank account</h4>
+        <i class='bx bxs-check-circle'></i>
+        <p id="total3"></p>
+        <div class="btn">
+            <button onclick="Back()" >Back</button>
+        </div>
+    </div>
+    <div class="pay-on-mobile" id="pop4">
+        <h4>Processing, please wait.....</h4>
+        <i class='bx bx-loader-circle'></i>
+        <p></p>
+        <div class="btn">
+            <button onclick="Back()" >Back</button>
+        </div>
+    </div>
+
+ <div class="pay-on-mobile" id="pay-on-mobile">
+        <h4>Pay to the mobile no.</h4>
+        <input id="text1" type="number" placeholder="Enter the number" required>
+        <input id="text2"type="number" placeholder="Enter the amount" required>
+        <div class="btn">
+            <button onclick="Back()" >Back</button>
+            <button onclick="sendMoneyViaMobile()">Pay</button>
+        </div>
+    </div>
+    <div class="pay-on-mobile" id="pay-on-account">
+        <h4>Pay to the Account no.</h4>
+        <input id="text3" type="number" placeholder="Enter the number" required>
+        <input id="text4" type="number" placeholder="Enter the amount" required>
+        <div class="btn">
+            <button onclick="Back()">Back</button>
+            <button onclick="SendMoneyViaAccount()">Pay</button>
+        </div>
+    </div>
+    <div class="pay-on-mobile" id="Add money">
+        <h4>Add money to bank account</h4>
+        <input  id="text5" type="number" placeholder="Enter the amount" required>
+        
+        <div class="btn">
+            <button onclick="Back()">Back</button>
+            <button onclick="AddMoney()">Add</button>    
+        </div>
+    </div>  
+    <div class="pay-on-mobile" id="Balance">
+        <h4>My account Balance </h4>
+        <p id="balance"></p>
+        <div class="btn">
+            <button onclick="Back()">Back</button>  
+        </div>
+    </div> 
+
+    <div class="parent">            
         <div id="menu">
             <div class="type">
                 <div class="loc2">
@@ -35,20 +102,20 @@
             
            <div class="icons">
             <div class="Icon1">
-                <i class='bx bx-user'></i>
+                <i onclick="window1()" class='bx bx-user'></i>
                 <p>To Mobile no.</p>
             </div>
             
             <div class="Icon2">
-                <i class='bx bx-home-circle'></i>     
+                <i onclick="window2()" class='bx bx-home-circle'></i>     
                 <p>To Bank UPI ID</p>
             </div>
             <div class="Icon3">
-                <i class='bx bx-circle-three-quarter'></i>    
+                <i onclick="window3()" class='bx bx-circle-three-quarter'></i>    
                 <p>To self account</p>
             </div>
             <div class="Icon4">
-                <i class='bx bxs-tachometer'></i>         
+                <i onclick="window4()" class='bx bxs-tachometer'></i>         
                 <p>Check bank Balance</p>
             </div>
      </div> 
