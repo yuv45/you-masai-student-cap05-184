@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:black;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .users-list {
+            margin-top: 20px;
+        }
+
+        .user-card {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: white 0px 5px 15px;
+            margin-right: 10%;
+        }
+
+        .user-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .user-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-details .name {
+            font-weight: bold;
+        }
+
+        .user-details .email {
+            color: #777;
+            margin-top: 5px;
+        }
+        #usersList{
+            display: grid;
+            grid-template-columns:250px 250px 250px;
+            grid-auto-rows: 200px;
+            gap: 80px;
+            font-size: 10px;
+          
+        }
+        #data{
+            margin-left: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="data">Fetch Users</button>
+        <div id="usersList" class="users-list"></div>
+
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
