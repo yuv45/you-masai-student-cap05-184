@@ -33,4 +33,16 @@ showData = (data) => {
     h1.innerText = "Movie not found";
     parent.append(h1);
   }
+  let moviecart=document.querySelectorAll("#display>div")
+  moviecart.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        moviedata(moviecart)
+    })
+  })
+
 };
+let moviedata=async(moviecart)=>{
+    let ans = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=984d7adc&t=${moviecart}`)   
+    let result= await ans.json(); 
+    console.log(result);      
+}

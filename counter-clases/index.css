@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Poppins;
+}
+#parent {
+  width: 30%;
+  border: 0px solid red;
+  height: 30vh;
+  margin: auto;
+  margin-top: 170px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(250, 250, 250, 0.25) 0px 54px 55px,
+    rgba(255, 250, 250, 0.12) 0px -12px 30px,
+    rgba(250, 239, 239, 0.12) 0px 4px 6px,
+    rgba(243, 239, 239, 0.17) 0px 12px 13px,
+    rgba(252, 242, 242, 0.09) 0px -3px 5px;
+}
+body {
+  background-color: black;
+}
+
+#display {
+  border: 0px solid blue;
+  margin-top: 15%;
+  height: 10vh;
+  font-size: 35px;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  font-size: 35px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.buttons > div:hover {
+  padding: 20px;
+  font-size: 20px;
+  opacity: 0.6;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bx-plus-medical {
+  color: green;
+}
+.bx-minus {
+  color: red;
+}
