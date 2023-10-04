@@ -1,0 +1,24 @@
+/* for map */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 446px;
+    width: 555px;
+    left: 43%;
+    margin-top: 50px;
+    border: 5px solid  black;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 446px;
+    width: 555px;
+  }
+  #parent{
+    border: 2px solid red;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+  }
