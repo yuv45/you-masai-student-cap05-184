@@ -1,24 +1,135 @@
 /* for map */
+* {
+  text-decoration: none;
+  margin: none;
+  padding: none;
+  font-family: Poppins;
+}
+.nav-items {
+  width: 60%;
+}
+.nav-items a {
+  margin-left: 70px;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+  opacity: 0.2px;
+}
+.nav-items a:hover {
+  text-decoration: underline;
+  padding: 12px;
+  transition: 0.6s;
+  opacity: 1px;
+}
 .mapouter {
-    position: relative;
-    text-align: right;
-    height: 446px;
-    width: 555px;
-    left: 43%;
-    margin-top: 50px;
-    border: 5px solid  black;
-  }
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 446px;
-    width: 555px;
-  }
-  #parent{
-    border: 2px solid red;
-    width: 20%;
-    height: auto;
-    position: absolute;
-    top: 50px;
-    text-align: center;
-  }
+  position: relative;
+  text-align: right;
+  height: 446px;
+  width: 555px;
+  left: 43%;
+  margin-top: -60px;
+  border: 5px solid black;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 446px;
+  width: 555px;
+}
+#parent {
+  border: 2px solid white;
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 170px;
+  left: 120px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+.logo {
+  display: flex;
+}
+.logo h3 {
+  font-size: 30px;
+  margin-left: 30px;
+  color: white;
+}
+img {
+  width: 120px;
+}
+body {
+  background-image: url(./bc.jpg);
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+#navbar img {
+  max-width: 40%;
+  border-radius: 50%;
+}
+#display {
+  display: none;
+  margin-top: 10%;
+  
+}
+.search {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.search input {
+  width: 450px;
+  height: 40px;
+  border-radius: 10px;
+}
+.search button {
+  background-color: transparent;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(250, 245, 245, 0.25) 0px 54px 55px,
+    rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(255, 251, 251, 0.12) 0px 4px 6px,
+    rgba(233, 228, 228, 0.17) 0px 12px 13px, rgba(226, 221, 221, 0.09) 0px -3px 5px;
+}
+.search button:hover{
+  padding: 12px;
+  color: black;
+  background-color: white ;
+  transition: 0.7s;
+}
+
+/* for forcast */
+.forecast-container{
+  display: flex;
+  text-align: center;
+  
+}
+.forecast-day{
+  color: white;
+  border: 2px solid white;
+  margin-left: 50px;
+  margin-top: 10%;
+ 
+}
+h2{
+  font-size: 15px;
+}
+ 
+.forecast-days{
+  display: flex;
+}
+.forecast-container h2{
+  color: white;
+  margin-top: 10%;
+}
+.icon{
+  width: 20%;
+  margin: 0;
+}
+p{
+  font-size: 10px;
+}
