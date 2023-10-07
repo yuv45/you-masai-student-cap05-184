@@ -29,6 +29,7 @@
   left: 43%;
   margin-top: -60px;
   border: 5px solid black;
+  box-shadow: rgb(247, 248, 248) 0px 20px 30px -10px;
 }
 .gmap_canvas {
   overflow: hidden;
@@ -47,6 +48,18 @@
   background-color: transparent;
   color: white;
 }
+#parent:hover {
+  background-color: white;
+  color: black;
+  opacity: 1;
+  transition: 1s;
+  padding: 6px;
+  
+}
+ img{
+ 
+  filter: drop-shadow(5px 5px 10px black);
+ }
 .logo {
   display: flex;
 }
@@ -72,7 +85,6 @@ body {
 #display {
   display: none;
   margin-top: 10%;
-  
 }
 .search {
   position: absolute;
@@ -92,44 +104,55 @@ body {
   cursor: pointer;
   color: white;
   box-shadow: rgba(250, 245, 245, 0.25) 0px 54px 55px,
-    rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(255, 251, 251, 0.12) 0px 4px 6px,
-    rgba(233, 228, 228, 0.17) 0px 12px 13px, rgba(226, 221, 221, 0.09) 0px -3px 5px;
+    rgba(238, 231, 231, 0.12) 0px -12px 30px,
+    rgba(255, 251, 251, 0.12) 0px 4px 6px,
+    rgba(233, 228, 228, 0.17) 0px 12px 13px,
+    rgba(226, 221, 221, 0.09) 0px -3px 5px;
 }
-.search button:hover{
+.search button:hover {
   padding: 12px;
   color: black;
-  background-color: white ;
+  background-color: white;
   transition: 0.7s;
 }
 
 /* for forcast */
-.forecast-container{
+.forecast-container {
   display: flex;
   text-align: center;
-  
 }
-.forecast-day{
+.forecast-day {
   color: white;
   border: 2px solid white;
   margin-left: 50px;
   margin-top: 10%;
- 
+  width: 20%;
 }
-h2{
-  font-size: 15px;
+h2 {
+  font-size: 20px;
 }
- 
-.forecast-days{
+#done{
+  color: white;
+  text-align: center;
+}
+.forecast-days {
   display: flex;
 }
-.forecast-container h2{
+.forecast-day:hover {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  opacity: 1;
+  transition: 1s;
+}
+.forecast-container h2 {
   color: white;
   margin-top: 10%;
 }
-.icon{
+.icon {
   width: 20%;
   margin: 0;
 }
-p{
+p {
   font-size: 10px;
 }

@@ -19,8 +19,8 @@ let ans = document.getElementById("parent");
 
 function result(weather) {
  
-  // console.log(weather);
   let ans = document.getElementById("parent");
+  ans.innerHTML="";
 
   let weatherdetails = weather.weather[0];
   let description = document.createElement("p");
@@ -77,10 +77,12 @@ let display = document.getElementById("display");
 
 
 button.addEventListener("click", (weather) => {
-  display.innerHTML="";
+
+  
     if(input.value!==""){
     search.style.top="100px"
     display.style.display = "block";
+    done.style.display="none";  
     show(input.value);
     
     
@@ -93,45 +95,49 @@ button.addEventListener("click", (weather) => {
       try {
         let res = await fetch(
           `https://api.openweathermap.org/data/2.5/forecast?q=${input.value}&appid=9e003096bdf7de29b38fb354ef22fcd2&units=metric`
+          
         );
+        function fetchdata(data) {
+          console.log(data)
+          const forecastEls = document.getElementById("forecastDays");
+          forecastEls.innerHTML = "";
+          const dailyData = data.list.filter((item, index) => index % 8 === 0);
+        
+          dailyData.forEach((day, idx) => {
+            if (idx < 5) {
+              const wind=day.wind.speed
+              const temp = day.main.temp;
+              const icon = day.weather[0].icon;
+              const date = new Date(day.dt_txt).toLocaleDateString();
+        
+              forecastEls.innerHTML += `
+                          <div class="forecast-day">
+                              <div class="forecast-date">${date}</div>
+                              <div class="forecast-icon">
+                                  <img src="http://openweathermap.org/img/w/${icon}.png" alt="Weather Icon">
+                              </div>
+                              <div class="forecast-wind"> Wind :${wind} mph</div>
+                              <div class="forecast-temp">Temp: ${temp}°C</div>
+                          </div>
+                      `;
+            }
+          });
+        }
         let data = await res.json();
         fetchdata(data);
       } catch (error) {
         console.log(error);
       }
     };
-    forecast();
-    function fetchdata(data) {
-      const forecastEls = document.getElementById("forecastDays");
-      forecastEls.innerHTML = "";
-      const dailyData = data.list.filter((item, index) => index % 8 === 0);
-    
-      dailyData.forEach((day, idx) => {
-        if (idx < 5) {
-          // Only take 5 days
-          const temp = day.main.temp;
-          const icon = day.weather[0].icon;
-          const date = new Date(day.dt_txt).toLocaleDateString();
-    
-          forecastEls.innerHTML += `
-                      <div class="forecast-day">
-                          <div class="forecast-date">${date}</div>
-                          <div class="forecast-icon">
-                              <img src="http://openweathermap.org/img/w/${icon}.png" alt="Weather Icon">
-                          </div>
-                          <div class="fore">
-                          <div class="forecast-temp">${temp}°C</div>
-                      </div>
-                  `;
-        }
-      });
-    }
-
+     forecast();
+  } 
+  else{
+    let done=document.getElementById("done");
+ 
+    let h1=document.createElement("h1");
+    h1.textContent="Please Enter the city name to get the data........";
+    done.append(h1);
   }
-  console.log(display.innerHTML)
-  // else{
-  //   alert("please fill out the city name")
-  // }
   
    
 });
