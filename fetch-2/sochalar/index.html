@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="parent">
-      <div class="navbar">
-        <a class="ancor" href="">Home</a>
-        <a class="ancor">
-          <select id="Catogories">
-            <option value="">Catogory</option>
-            <option onclick="Jewellery()"  value="">Jewellery</option>
-            <option onclick="Electronics()" value="">Electronics</option>
-            <option onclick="mens()" value="">Mens Clothing</option>
-            <option onclick="Womens()" value="">Womens Clothing</option>
-          </select></a>
-        <a class="ancor">
-          <select id="sort-By">
-            <option value="">Sort by</option>
-            <option onclick="higher()" value="">Price(Higher to Lower)</option>
-            <option onclick="lower()" value="">Price(Lower to higher)</option>
-            <option onclick="Desc()" value="">Id(In desc order)</option>
-            <option onclick="Aesc()" value="">Id(In aesc)</option>
-          </select>
-        </a>
-        <a class="ancor" href="">Help</a>
-      </div>
-      <div class="search-bar">
-        <input id="input" type="search" placeholder="Search" required />
-        <i class="bx bx-search"></i>
-      </div>
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Fetch Scholar</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="Home"onclick="home()">Home</div>
+        <div id="categoryDiv">
+            <p >Categories</p>
+            <i onclick="categories()" class='bx bxs-chevron-down'></i>
+        </div>
+        <div id="short">
+            <p >Sort by</p>
+            <i onclick="shortBy()"class='bx bxs-chevron-down'></i>
+
+        </div>
+        <div id="search-bar">
+            <input type="text" name="" id="inp" placeholder="Search"> 
+            <i onclick="searchbar()"class='bx bx-search'></i> 
+        </div>
     </div>
-    <div id="container"></div>
-  </body>
-  <script src="./index.js"></script>
+    <div id="categories"></div>
+    <div id="shortList">
+        <p onclick="lowHigh()">Price (Low to High)</p>
+        <p onclick="highLow()">Price (High to Low)</p>
+    </div>
+    <div id="parent"></div>
+    <div id="child"></div>
+</body>
+<script src="index.js"></script>
 </html>

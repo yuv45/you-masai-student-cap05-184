@@ -1,71 +1,123 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
     font-family: Poppins;
-    
- 
 }
-i{
-    font-size: 20px;
-    margin-top: 5px;
-}
-#parent {
-display: flex;
- justify-content: space-between;
- 
-background-color: blue;
-height: 40px;
-text-align: center;
-}
-.ancor{
-    margin-left: 60px;
-    padding: 6px;
+#Home{
+    font-size:25px ;
     color: white;
-}
-#sort-By{
-     color: white;
-    background-color:blue  ;
-    cursor: pointer;
-}
-#Catogories{
-    color: white;
-    background-color:  blue;
-    cursor: pointer;
-}
-#input{
-    background-color:white;
-    border:1px solid black ;
-    height: 25px;
-    color: black;
-    
-    cursor: pointer;
-}
-#container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
- 
-    gap: 30px;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
+     color: bisque;
+     cursor: pointer;
+     margin-top: -20px;
 }
 img{
-    width: 200px;
-    height: 200px;
+    display: block;
 }
- p{
-    font-size: 8px;
-    text-align: center;
- }
-  #container div{
-    border: 1px solid black;
-    text-align: center;
-    width: 270px;
-  
- }
- ;
+ 
+#parent{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    margin:auto;
+    margin-top: 20px;
+}
+#parent>div{
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+#parent>div>p{
+    font: 24px 'Poppins';
+    margin-top: 10px;
+}
+#navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: blue;
+}
+ 
+#search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#search-bar>input{
+    font: 18px 'Poppins';
+    border: 3.5px solid rgb(93, 85, 85);
+    border-radius: 30px;
+}
+ 
+#categoryDiv>p,#categories>p,#short>p,#shortList>p{
+    font: 24px 'Poppins';
+    color: bisque;
+    cursor: pointer;
 
+}
+.bx-search{
+    color: white;
+    font-size: 20px;
+}
+#short>i,#categoryDiv>i{
+color: white;
+position: relative;
+left: 80px;
+top: -24px;
+font-size: 20px;
+}
+#categories>p,#shortList>p{
+    margin-top: 5px;
+  
+}
+#categories{
+    background-color: rgb(89, 180, 223);
+    max-width: fit-content;
+    position: fixed;
+    left: 25%;
+    top: 80px;
+    padding: 5px;
+    display: none;
+}
+#shortList{
+    background-color: rgb(89, 180, 223);
+    max-width: fit-content;
+    position: fixed;
+    left: 50%;
+    top: 80px;
+    display: none;
+    padding: 5px;
+}
+#parent img{
+    height: 200px;
+    width: 150px;
+    margin: auto;
+}
+#child>div:first-child{
+    margin: auto;
+    width: 30%;
+}
+#child>div:first-child>img{
+    width: 100%;
+}
+#child>div:nth-child(2)>h1{
+    margin-top: 40px;
+    font: 42px 'Poppins';
+    font-weight: bold;
+}
+#child>div:nth-child(2)>h2{
+    margin-top: 20px;
+    font: 36px 'Poppins';
+    font-weight: bold;
+}
+#child>div:nth-child(2)>p{
+    font: 24px  ;
+    font-weight: bold;
+    margin-top: 20px;
+}
