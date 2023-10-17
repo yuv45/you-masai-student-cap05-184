@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .superhero-card{
+            border: 2px solid black;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <div id="root">
+   </div>
+   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://www.unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+<script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+<script type="text/babel">
+ function SuperheroCard(props){
+ console.log(props)
+    return (
+        
+        <div className="superhero-card">
+          
+            <p>Name :{props.Name}</p>
+            {props.Hobbies.length>0? <p>Hobbies : {props.Hobbies.join(" , ")}</p>:<h3>No hobbies</h3>}
+           
+            <p>HasSuperPowers : {props.HasSuperPowers?"yes":"no"}</p>
+            <div style={{ color: "red" }}>
+              <p>Street :{props.Address.street}</p>
+              <p>City : {props.Address.city}</p>
+              <p>Country : {props.Address.country}</p>
+            </div>
+            <p>Age :{props.Age}</p>
+          </div>
+        
+        
+          )
+        }
+            function App(){
+                return (
+                <div>
+                    <SuperheroCard
+                    Name="batman"
+                    Hobbies={[]}
+                    HasSuperPowers={false}
+                    Address={{
+                        street:"Arkhsm-street",
+                        city:"Gotham",
+                        country:"USA",
+                    }}
+                    Age={25}
+                    />
+                    <SuperheroCard
+                    Name="Superman"
+                    Hobbies={["Flying ","buying cars"]}
+                    HasSuperPowers={true}
+                    Address={{
+                        street:"bichhla-ing",
+                        city:"awkard",
+                        country:"Russia",
+                    }}
+                    Age={35}
+                    />
+                    
+                    </div>
+                    )
+            }
+   
+ 
+ let reactRoot=ReactDOM.createRoot(document.getElementById("root"));
+ reactRoot.render(<App/>);
+</script>
+</body>
+
+
+</html>
