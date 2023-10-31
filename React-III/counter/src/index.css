@@ -1,0 +1,23 @@
+ 
+.child{
+  border: 0px solid black;
+  width: 20%;
+  text-align: center;
+  height: 200px;
+  border-radius: 50%;
+  padding-top:60px;
+  align-items: center;
+  margin-top: 15%;
+  margin-left: 40%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+ button{
+cursor: pointer;
+    border: none;
+    background-color:yellow;
+    border-radius: 10px;
+    font-size: 15px;font-weight: bold;
+    height: 40px;
+ }
+ 
+ 
