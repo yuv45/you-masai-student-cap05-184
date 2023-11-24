@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0;
+    text-decoration: none;
+    font-family: Poppins;
+}
+.main-box{
+    width: 90%;
+    margin: auto;
+}
+.Footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+p{
+    color:lightseagreen;
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-child{
+    text-align: left;
+}
+h6{
+    font-size: 12px;
+    cursor: alias;
+    margin-bottom: 15px;}
+h5{
+font-weight: lighter;
+    }
+.uitk-image-media{
+    width: 90%;
+    height: 250px;
+    border: 1px solid grey;
+    opacity: 0.8;
+}
+.opa img{
+    background-color: black;
+}
+.mains{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.rewards{
+    border: 1px solid grey;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 400px 550px 200px;
+    gap: 30px;
+    margin-bottom: 60px;
+    
+}
+.rewards-images{
+    
+width: 400px;
+height: 250px ;
+}
+.rewards-images2{
+    width: 150px;
+}
+#details-of-reward-box{
+    margin-top: 10px;
+}
+ul{
+    font-size: 28px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1F1F1F;
+}
+ul li{
+    font-size: 11px;
+    margin: 10px;
+    font-weight: lighter;
+}
+.Scanner{
+    text-align: center;
+    margin-top: 20px;
+}
+h3{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 40px;
+    color: #1F1F1F; 
+}
+#Destinations{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 30px;
+}
+#Destinations .Destiny{
+    text-align: left;
+    margin: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ .bx-chevron-down{
+    margin-left: 90%;
+    margin-top: -20%;
+ }
+ .np{
+    position: relative;
+    top: -50%;
+    margin: 15px;
+ }
+ .np h2{
+    color: white;
+ }
+ .np p{
+    color: white;
+    font-size: 15px;
+ }
+ .np button{
+    color: teal;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+ }
+ .option{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+ }
+ .resort img{
+    height: 200px;
+    width: 300px;
+    opacity: 1;
+ }
+ .pictures{
+    position: relative;
+    top: -20%;
+    margin: 10px;
+ }
+ .pictures h4{
+    color: white;
+    font-family: bold;
+
+ }
+ .pictures p{
+    color: white;
+    text-decoration:none ;
+ }
+ .child{
+    display: grid;
+    grid-template-columns: 100px 700px;
+    gap: 20px;
+ }
+ .child p{
+    color: black;
+    font-size: 15px;
+ }
+#mountains{
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 15px;
+}
+ .trees img{
+ 
+    height: 200px;
+    width: 400px;
+ }
+ .trees p{
+    color: white;
+    position: relative;
+    top: -15%;
+    margin: 10px;
+    text-decoration: none;
+ }
+ .edit{
+    border: 1px solid grey;
+    
+ }
+ .edit p{
+    color: #1F1F1F;
+ }
+ #booking-details{
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 40px;
+ }
+ .main-signinbox{
+    text-align: center;
+ }
+ form{
+    width: 30%;
+    margin: auto;
+ }
+ #signin-box{
+    text-align: center;
+
+ }
+ .main-signinbox img{
+ width: 180px;
+ }
+ .main-signinbox h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -280px;
+    margin-top: 20px;
+ }
+ .main-signinbox input{
+    width: 400px;
+   height: 40px;
+   margin-top: 15px;
+ }
+ .main-signinbox #checklist{
+     width: 20px;
+     margin-left: -380px;
+
+ }
+ .main-signinbox .checklist{
+    text-decoration: none;
+    color: #7A6161;
+    font-size: 15px;
+    margin-left: -220px;
+    text-align: center;
+    margin-top: -35px;
+ }
+ .main-signinbox    span{
+    color: #1F1F1F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+ }
+ .main-signinbox p{
+    font-size: 13px;
+ }
+ .bxl-apple{
+    width: 40px;
+    height: 40px;
+ }
+ .bxl-facebook-square{
+    color: darkblue;
+ }
+ 
+ #signin-box .image i{
+    margin-left: -500px
+ }
+ .carousel-cell {
+   width: auto;
+   margin-right: 10px;
+   border: 1px solid grey;
+   margin-bottom: 20px;
+   }
+   
+   .carousel-cell:before {
+     display: block;
+   }
+   .slide-images img{
+      width: 350px;
+      height: 150px;
+   }
+   .main-carousel{
+      display: grid;
+      grid-template-columns: repeat(8,1fr);
+      gap: 10px;
+      margin-left: 60px;
+   }
+   .heading h2{
+ margin-left: 60px;
+ margin-bottom: 10px;
+   }
+   .slide-details{
+      margin: 10px;
+   }
+   .slide-details h6{
+      font-size: 15px
+   }
+   .slide-details p{
+      color: #1F1F1F;
+      text-decoration: none;
+   }
+   
+   .navbar-image img{
+      padding:20px;
+   }
+   .get-app{
+      background-color: white;
+      display: flex;
+      width: 100px;
+      height: 20px;
+margin-top: 25px;
+margin-left:200px;
+   }
+
+   .more-travel{
+      display: flex;
+   }
+   .nav-components{
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      color: white;
+   }
+   #main{
+       display: flex;
+      background-color:#00253C;
+      justify-content: space-between;
+  height: 70px;
+   }
+   .nav{
+      display: flex;
+      width: 30%;
+      
+   }
+   .nav h6{
+      padding:30px;
+      color: white;
+   }
+   .nav i{
+      color: white;
+      margin-top: 33px;
+      margin-left: -28px;
+   }
+   .nav-components h6{
+      padding: 25px;
+   }
+    
